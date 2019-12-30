@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base3.css') }}">
+</head>
+<body>
+<form action="/cbuck" method="post">
+    <center>
+        <p> <b>BUCKET NAME MUST BE UNIQUE,OTHERWISE BUCKET CAN NOT OPEN</b></p><br>
+    <input type="text"  name="bn"><br>
+    <input type="submit" name="submit">
+    </center>
+</form>
+</body>
+</html>

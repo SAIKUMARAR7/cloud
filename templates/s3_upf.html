@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload a File</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base3.css') }}">
+</head>
+<body>
+<form action="/createf" method="POST"><center>
+   <pre>
+       <b> SOURCE FILE </b>              <input type="text" name="sf"><br>
+       <b>DESTINATION BUCKET </b>        <input type="text" name="db"><br>
+       <b> DESTINATION FILE NAME </b>    <input type="text" name="df"> <br>
+        <input type="submit" value="submit"> </pre>
+
+</center>
+</form>
+
+</body>
+</html>

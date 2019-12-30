@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIST</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css9.css') }}">
+
+</head>
+<body>
+{% for i in lis%}
+    <p class="p">{{i}}</p>
+    {% endfor %}
+
+</body>
+</html>

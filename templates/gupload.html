@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UPLOAD</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css9.css') }}">
+</head>
+<body>
+<pre>
+<form action="/uploaded" method="POST">
+    Enter the bucket name<input type="text" name="bucket"><br>
+    Enter the file to be uploaded(Note:Path of the source file)<input type="text" name="sfile"><br>
+    Enter how the file to be stored<input type="text" name="dfile"><br>
+
+    <input type="submit" id="b" name="submit">
+
+</form></pre>
+
+</body>
+</html>

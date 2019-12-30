@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOWNLOAD</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css9.css') }}">
+</head>
+<body>
+<form action="/adownloaded" method="POST">
+    <pre>
+        Enter the container name<input type="text" name="container"><br>
+        Enter the file to be downloaded<input type="text" name="sfile"><br>
+        Enter how the file to be stored <input type="text" name="dfile"><br>
+    </pre>
+    <centre><input type="submit" name="submit"></centre>
+    </form>
+
+
+
+
+</body>
+</html>
