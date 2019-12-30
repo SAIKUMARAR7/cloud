@@ -11,7 +11,7 @@ connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
 blob_service_client = BlobServiceClient.from_connection_string(connect_str)
 
 
-sc = Session(aws_access_key_id='AKIAYVOB3KT5I4HFQNPW', aws_secret_access_key='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')#assigning acceskey & secret key of Goolgle-cloud for accessing thecloud account
+sc = Session(aws_access_key_id='Accesskey', aws_secret_access_key='secretkey')#assigning acceskey & secret key of Goolgle-cloud for accessing thecloud account
 
 
 app = Flask(__name__)
@@ -400,8 +400,8 @@ def adeleted():
 
 @app.route('/alisted')
 def alisted():
-    block_blob_service = BlobServiceClient(account_url="https://praveenjoseph.blob.core.windows.net",
-                                           credential="dnOo7KLZg+HrjLV8BzbTeeDY4sHSMCc2Pn5EF1wWP245Z6eCBNVaZmEDwDpqtPF9Nmp4nQ8jSuEBDABtslfKvQ==")# these variables can be varied for different users, must be checked before execution of the program
+    block_blob_service = BlobServiceClient(account_url="accounturl",
+                                           credential="credential ")# these variables can be varied for different users, must be checked before execution of the program
 
     containers = block_blob_service.list_containers()
     c2 = []
